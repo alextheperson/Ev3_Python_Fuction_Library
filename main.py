@@ -1,5 +1,7 @@
 #!/usr/bin/env pybricks-micropython
 
+from library import Library
+
 from pybricks import ev3brick as brick
 from pybricks.ev3devices import (Motor, TouchSensor, ColorSensor,
                                  InfraredSensor, UltrasonicSensor, GyroSensor)
@@ -9,4 +11,5 @@ from pybricks.tools import print, wait, StopWatch
 from pybricks.robotics import DriveBase
 
 # Write your program here
-brick.sound.beep()
+library = Library(brick)
+library.beep()
